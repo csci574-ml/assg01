@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "Show python versions",
+      "setup": "",
+      "run": "python src/python_versions.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "Test Assignment Notebook runs all cells cleanly",
+      "setup": "",
+      "run": "cd notebooks; jupyter nbconvert --execute Assg-01-Python-NumPy-Solutions.ipynb --to notebook",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Task 1 test fibonacci_inefficient()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m twisted.trial test_assg_tasks.test_fibonacci_inefficient",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Task 1 test fibonacci_efficient()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m twisted.trial test_assg_tasks.test_fibonacci_efficient",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Task 2 test numpy operations",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m twisted.trial test_assg_tasks.test_task_2_numpy_operations",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Task 3 test iterate_julia_set()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m twisted.trial test_assg_tasks.test_iterate_julia_set",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Task 4 test dataframe information getter",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m twisted.trial test_assg_tasks.test_task_4_dataframe_information",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Task 4 test dataframe mutator",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m twisted.trial test_assg_tasks.test_task_4_dataframe_mutate",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}

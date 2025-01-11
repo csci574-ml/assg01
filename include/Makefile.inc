@@ -57,6 +57,17 @@ assgdocs : $(assg_doc)
 $(assg_doc) : README.md
 	${PANDOC} ${PANDOC_FLAGS} ${PANDOC_HIGHLIGHT} -o $@ $^
 
+## unit-tests   : Run all of the unit/doc tests available
+##
+.PHONY : unit-tests
+unit-tests :
+	python -m twisted.trial test_assg_tasks.test_fibonacci_inefficient
+	python -m twisted.trial test_assg_tasks.test_fibonacci_efficient
+	python -m twisted.trial test_assg_tasks.test_task_2_numpy_operations
+	python -m twisted.trial test_assg_tasks.test_iterate_julia_set
+	python -m twisted.trial test_assg_tasks.test_task_4_dataframe_information
+	python -m twisted.trial test_assg_tasks.test_task_4_dataframe_mutate
+
 
 ## clean        : Remove auto-generated files for a completely
 ##                clean rebuild
