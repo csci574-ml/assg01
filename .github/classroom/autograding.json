@@ -13,7 +13,7 @@
     {
       "name": "Test Assignment Notebook runs all cells cleanly",
       "setup": "",
-      "run": "cd notebooks; jupyter nbconvert --execute Assg-01-Python-NumPy-Solutions.ipynb --to notebook",
+      "run": "cd notebooks; jupyter nbconvert --execute Assg-01-Python-NumPy.ipynb --to notebook",
       "input": "",
       "output": "",
       "comparison": "included",
