@@ -1,6 +1,6 @@
 ---
 title: 'Assignment 02: Writing Python Functions and Numpy Vectorization'
-author: 'CSci 560: Neural Networks and Deep Learning'
+author: 'CSci 574: Machine Learning'
 date: ''
 ---
 
