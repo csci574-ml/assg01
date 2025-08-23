@@ -44,7 +44,7 @@ jobs:
         test-name: 'Test Assignment Notebook'
         working-directory: './notebooks'
         setup-command: ''
-        command: 'cd notebooks; jupyter nbconvert --execute Assg-02-Python-with-Numpy.ipynb --to notebook'
+        command: 'cd notebooks; jupyter nbconvert --execute Assg-01-Python-with-Numpy.ipynb --to notebook'
         timeout: '10'
         max-score: '20'
 
