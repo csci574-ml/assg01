@@ -1,5 +1,5 @@
 ---
-title: 'Assignment 02: Writing Python Functions and Numpy Vectorization'
+title: 'Assignment 01: Writing Python Functions and Numpy Vectorization'
 author: 'CSci 574: Machine Learning'
 date: ''
 ---
