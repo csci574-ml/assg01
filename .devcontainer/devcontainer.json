@@ -1,7 +1,10 @@
 {
 	"build": {
-		"dockerfile": "./Dockerfile",
-		"context": ".."
+        "dockerfile": "./Dockerfile",
+        "context": "..",
+        "args": {
+            "CONTAINER_WORKSPACE_FOLDER": "${containerWorkspaceFolder}"
+        }
 	},
 	"features": {
         "ghcr.io/devcontainers/features/node:1": {

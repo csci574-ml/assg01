@@ -25,10 +25,11 @@ RUN chmod =2775 /opt/conda
 USER root
 
 # Setup conda to mirror contents from https://github.com/ContinuumIO/docker-images/blob/master/anaconda3/debian/Dockerfile
+ARG CONTAINER_WORKSPACE_FOLDER
 ENV LANG=C.UTF-8 \
     LC_ALL=C.UTF-8 \
     PATH=/opt/conda/bin:$PATH \
-    PYTHONPATH=/workspaces/assg02/src
+    PYTHONPATH=${CONTAINER_WORKSPACE_FOLDER}/src
 ARG USERNAME=vscode
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get install -y --no-install-recommends \
