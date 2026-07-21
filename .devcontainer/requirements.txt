@@ -1,0 +1,11 @@
+wheel==0.40.0
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+pytest
+ipykernel
+ipywidgets
+jupyter
+jupyterlab
